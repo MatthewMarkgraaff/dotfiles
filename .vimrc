@@ -21,11 +21,16 @@ Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'mhinz/vim-startify'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'ayu-theme/ayu-vim'
+Plugin 'tyrannicaltoucan/vim-quantum'
+Plugin 'beigebrucewayne/Turtles'
+Plugin 'tomasr/molokai'
+Plugin 'nightsense/carbonized'
 
 " Add key shortcut for NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -33,7 +38,7 @@ map <C-n> :NERDTreeToggle<CR>
 syntax enable
 syntax on
 filetype off
-color dracula
+colorscheme turtles
 set t_Co=256
 
 " vim-javascript syntax highlighting
