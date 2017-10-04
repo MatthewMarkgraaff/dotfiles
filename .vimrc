@@ -28,18 +28,16 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'tyrannicaltoucan/vim-quantum'
-Plugin 'beigebrucewayne/Turtles'
-Plugin 'tomasr/molokai'
-Plugin 'nightsense/carbonized'
+Plugin 'morhetz/gruvbox'
 
 " Add key shortcut for NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
-syntax enable
 syntax on
 filetype off
-colorscheme turtles
-set t_Co=256
+
+" the looks yo
+colorscheme gruvbox
 
 " vim-javascript syntax highlighting
 let g:javascript_plugin_jsdoc = 1
