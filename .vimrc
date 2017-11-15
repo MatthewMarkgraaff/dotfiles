@@ -69,6 +69,8 @@ set undodir=~/.vim/_undo/
 au BufRead,BufNewFile *.html.slim set filetype=slim
 au BufRead,BufNewFile *.html.inky set filetype=slim
 
+let g:ctrlp_max_depth=40
+
 set noro
 
 call vundle#end()
