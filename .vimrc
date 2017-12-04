@@ -29,6 +29,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'ayu-theme/ayu-vim'
 Plugin 'tyrannicaltoucan/vim-quantum'
 Plugin 'morhetz/gruvbox'
+Plugin 'mhinz/vim-startify'
 
 " Add key shortcut for NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -72,6 +73,8 @@ au BufRead,BufNewFile *.html.inky set filetype=slim
 let g:ctrlp_max_depth=40
 
 set noro
+
+let NERDTreeShowHidden=1
 
 call vundle#end()
 filetype plugin indent on
