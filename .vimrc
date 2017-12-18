@@ -30,6 +30,10 @@ Plugin 'ayu-theme/ayu-vim'
 Plugin 'tyrannicaltoucan/vim-quantum'
 Plugin 'morhetz/gruvbox'
 Plugin 'mhinz/vim-startify'
+Plugin 'Quramy/tsuquyomi'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'bdauria/angular-cli.vim'
 
 " Add key shortcut for NERDTree
 map <C-n> :NERDTreeToggle<CR>
@@ -47,6 +51,24 @@ let g:javascript_plugin_jsdoc = 1
 :set tabstop=2
 :set shiftwidth=2
 :set autochdir
+
+" vim-typescript
+let g:typescript_compiler_binary = 'tsc'
+let g:typescript_compiler_options = ''
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
+" syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi']
+
+" angular cli vim
+autocmd VimEnter * if globpath('.,..','node_modules/@angular') != '' | call angular_cli#init() | endif
 
 imap jk <esc>
 imap kj <esc>
